@@ -5,7 +5,9 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "the-seasons", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background: radial-gradient(ellipse at bottom, #1a1a1a 0%, #0a0a0a 100%);
   color: #fff;
   overflow-x: hidden;
@@ -19,7 +21,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+font-family: "the-seasons", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 
@@ -490,14 +494,23 @@ main {
 
 
 .webpage-window {
-  background-color: #1c1c1c;
+  background: linear-gradient(to bottom right,
+      rgba(30, 30, 30, 0.95),
+      rgba(10, 10, 10, 0.95));
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.1);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.05),
+    inset 0 10px 20px rgba(255, 255, 255, 0.02),
+    0 8px 24px rgba(0, 255, 255, 0.1);
   padding: 2rem;
   max-width: 900px;
   margin-top: 100px;
   position: relative;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
+
+
 
 
 .webpage-toolbar {
@@ -514,6 +527,9 @@ main {
   width: 12px;
   height: 12px;
   border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  /* shadow effect */
+  transition: transform 0.2s ease;
 }
 
 .close-btn {
