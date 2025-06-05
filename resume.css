@@ -29,4 +29,9 @@
     .resume-container iframe {
         height: 400px;
     }
+
+    .resume-summary {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
 }
