@@ -479,10 +479,14 @@ main {
 
 /* Site header in top-left corner */
 .site-header {
-  position: fixed;
-  top: 20px;
-  left: 20px;
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
   z-index: 2000;
+ 
 }
 
 .site-title {
